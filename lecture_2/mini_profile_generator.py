@@ -29,7 +29,9 @@ def create_user_profile()-> dict:
 user_profile = create_user_profile()
 
 def display_profile(profile:dict):
-    print(f"Profile summary: \n"
+    print(f"\n"
+          f"---\n"
+          f"Profile summary: \n"
           f"Name: {user_profile.get('name')}\n"
           f"Age: {user_profile.get('age')}\n"
           f"Life stage: {user_profile.get('stage')}"
@@ -40,6 +42,7 @@ def display_profile(profile:dict):
             print(f"- {hobby_type}")
     else:
         print(f"You didn't mention any hobbies.")
+    print(f"---")
 
 display_profile(user_profile)
 
